@@ -6,6 +6,11 @@ import './plugins/element.js'
 
 Vue.config.productionTip = false
 
+import axios from 'axios'
+Vue.prototype.$http=axios.create({
+  baseURL:'http://www.boxturtleblog.com'
+})
+
 new Vue({
   router,
   store,
