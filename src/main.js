@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 
 import axios from 'axios'
 Vue.prototype.$http=axios.create({
-  baseURL:'http://www.boxturtleblog.com'
+  baseURL:'http://localhost:8080'
 })
 
 new Vue({
